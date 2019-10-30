@@ -2,6 +2,7 @@ import java.util.*;
 public class MyClass {
     public static void main(String args[]) {
         //https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/
+        //https://www.geeksforgeeks.org/iterate-map-java/
         HashMap<Integer,Integer> H = new HashMap<>();
         H.put(1,2);
         H.put(2,3);
