@@ -20,6 +20,12 @@ public class MyClass {
         //print all the keys,values pairs
             System.out.println(" the (key,value) pairs present is " + H.entrySet());
 
+        //print all the keys,values pairs
+        // using for-each loop for iteration over Map.entrySet() 
+        for (Map.Entry<Integer,Integer> entry : H.entrySet())  
+            System.out.println("Key = " + entry.getKey() + 
+                             ", Value = " + entry.getValue()); 
+
         H.clear();
         System.out.println(" the size is " +  H.size());
         if(H.isEmpty()){
