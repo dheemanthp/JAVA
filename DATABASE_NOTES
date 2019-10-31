@@ -1,0 +1,109 @@
+SQL Database questions:
+https://www.geeksforgeeks.org/sql-interview-questions/
+https://www.interviewbit.com/sql-interview-questions/ ---> joins are explained very well here , as well as Normalization
+
+
+Primary Keys/super key/Compound keys/foreign in a Table:
+https://www.guru99.com/dbms-keys.html
+
+
+What is Data Integrity?
+Data Integrity is the assurance of accuracy and consistency of data over its entire life-cycle
+
+
+Normal form: https://www.interviewbit.com/sql-interview-questions/
+============================================================================================
+1NF - Break down the records into multiple records for simplicity
+2NF - must follow 1NF and also ensure to idenitfy to create multiple tables , with the Primary key and foreign key.
+
+
+Rules for BCNF : https://www.studytonight.com/dbms/boyce-codd-normal-form.php
+============================================================================================
+For a table to satisfy the Boyce-Codd Normal Form, it should satisfy the following two conditions:
+    It should be in the Third Normal Form.
+    And, for any dependency A → B, A should be a super key.
+
+
+ What is a join in SQL? What are the types of joins?
+============================================================================================
+An SQL Join statement is used to combine data or rows from two or 
+more tables based on a common field between them. Different types of Joins are:
+
+    INNER JOIN: The INNER JOIN keyword selects all rows from both the
+ tables as long as the condition satisfies. This keyword will create the result-set by combining all
+ rows from both the tables where the condition satisfies i.e value of the common field will be same.
+    LEFT JOIN:This join returns all the rows of the table on the left side of the join and matching 
+rows for the table on the right side of join. The rows for which there is no matching row on right side, 
+the result-set will contain null. LEFT JOIN is also known as LEFT OUTER JOIN
+    RIGHT JOIN:RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the 
+right side of the join and matching rows for the table on the left side of join. The rows for which there 
+is no matching row on left side, the result-set will contain null. RIGHT JOIN is also known as RIGHT OUTER JOIN.
+    FULL JOIN: FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. 
+The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
+
+
+What is an index?
+============================================================================================
+A database index is a data structure that improves the speed of data retrieval operations on a 
+database table at the cost of additional writes and the use of more storage space to maintain the 
+extra copy of data. Data can be stored only in one order on disk. To support faster access according 
+to different values, faster search like binary search for different values is desired. For this purpose, 
+indexes are created on tables. These indexes need extra space on disk, but they allow faster search 
+according to different frequently searched values.
+
+
+
+
+
+
+
+What is a view in SQL?
+============================================================================================
+Views in SQL are kind of virtual tables. A view also has rows and columns as they are in a real table
+ in the database. We can create a view by selecting fields from one or more tables present in the database.
+ A View can either have all the rows of a table or specific rows based on certain condition.
+
+What do you mean by foreign key?
+============================================================================================
+A Foreign key is a field which can uniquely identify each row in another table. And this constraint is used to specify a field as Foreign key.
+
+Indexing:
+============================================================================================
+performance can be improved by Indexing
+it is an ordered arrangement on a Key, together with a pointer to the record.
+you can also index on another attribute .
+Hence you dont want to sort the database itself , but rather maintain indexes
+saves on cost
+
+Horizontal Scaling vs Veritical Scalaing
+============================================================================================
+https://www.youtube.com/watch?v=xpDnVSmNFX0
+
+Sharding:
+============================================================================================
+Consistency vs Availability
+COnsistency trumps ove availability
+
+
+Optimization of queries , or Indexing are one thing, but finally it is always good to shard the data.
+https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
+https://www.youtube.com/watch?v=5faMjKuB9bc
+
+1)servers which are going to take the load of the request
+2) Horizontal partition - basically take one attribute or key , and parition the data across multiple Database servers 
+Shard on location and so all users in city X , fall in one of location.
+Problems:
+joins : problems with join is if query is across shards.
+Consitent Hashing: Memcached
+Fixed Shards: in order to fix this we can use heirrachial sharding.
+you can index on age
+Master slave concept: helps in solving single point failure , there is more tolerance.
+
+3) Veritical Parition - 
+
+No SQL databases:
+============================================================================================
+
+
+
+
