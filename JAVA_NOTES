@@ -29,6 +29,12 @@ Super keyword in Method Overriding :
 Super() calls the constructor of parent
 Super.xyz() calls the method of the parent
 
+Abstract Class: https://beginnersbook.com/2013/05/java-abstract-class-method/
+When you absolutely know that a method will be overriden by the child class and implemented in the child class
+then you dont need that method to be implemented in the parent class , and you can mark the method as abstract
+and also the class as abstract . child will extend the abstract class. Abstract class objects cannot be created.
+Abstract class is useless until somebody really extends the class.
+
 
 OOPS JAVA:
 https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/
