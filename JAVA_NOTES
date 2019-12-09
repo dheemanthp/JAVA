@@ -1,5 +1,7 @@
 JAVA Notes:
 ===========
+What is encapsulation?Encapsulation is also known as “data Hiding“.
+hiding certain details by making them private , and allowing them to be accessed by setters and getters.
 
 Method Overloading  - Static polymorphism
 1) different number of parameters
