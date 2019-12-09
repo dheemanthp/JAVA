@@ -1,6 +1,11 @@
 JAVA Notes:
 ===========
 
+Method Overloading  - Static polymorphism
+1) different number of parameters
+2) same number of parameters with different type
+3) same number of parameters with rearrangement of types
+
 OOPS JAVA:
 https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/
 
