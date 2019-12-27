@@ -3,12 +3,39 @@ JAVA Notes:
 
 Fundamental:
 http://www.c4learn.com/java/java-assigning-object-reference/
+obj dheemz = new Rectangle();
+obj dheemz1 = dheemz;
+in java by doing this kind of assignment , we dont create a copy , but we actually assign the reference to dheemz1.
+now manipulating dheemz1 will definitely modify the origial rectange.
+
+class Rectangle {
+  double length;
+  double breadth;
+}
+
+public class RectangleDemo {
+  public static void main(String args[]) {
+
+  Rectangle r1 = new Rectangle();
+  Rectangle r2 = r1;
+
+  r1.length = 10;
+  r2.length = 20;
+  
+  System.out.println("Value of R1's Length : " + r1.length);//20
+  System.out.println("Value of R2's Length : " + r2.length);//20
+  
+  r1 = null;//r1 points to null
+  System.out.println("Value of R2's Length : " + r2.length);//r2 still contains 20
+  
+  }
+}
+
+JAVA SWAPPING:
 https://www.javaworld.com/article/2077424/learn-java-does-java-pass-by-reference-or-pass-by-value.html
+Java always does pass by value , hence if you are trying to swap the objects in a method then it does not work.
 
-
-
-
-
+============================================================================================================
 What is encapsulation?Encapsulation is also known as “data Hiding“.
 hiding certain details by making them private , and allowing them to be accessed by setters and getters.
 
