@@ -1,5 +1,14 @@
 JAVA Notes:
 ===========
+
+Fundamental:
+http://www.c4learn.com/java/java-assigning-object-reference/
+https://www.javaworld.com/article/2077424/learn-java-does-java-pass-by-reference-or-pass-by-value.html
+
+
+
+
+
 What is encapsulation?Encapsulation is also known as “data Hiding“.
 hiding certain details by making them private , and allowing them to be accessed by setters and getters.
 
